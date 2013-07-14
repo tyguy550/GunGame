@@ -1,0 +1,7 @@
+"gungame"
+{
+	"base"		"base"
+	"title"		"GunGame"	
+	"maps"		"gm_*"
+	"menusystem"	"1"
+}
