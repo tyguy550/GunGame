@@ -121,7 +121,7 @@ timer.Create("zedtime", 100, 0, function()
 	game.SetTimeScale(GunGame.ZedTimeSpeed)
 	net.Start("zedtime_sendeffect")
 	net.Send(player.GetAll())
-		timer.Simple(1.6, function()
+		timer.Simple(0.8, function()
 		game.SetTimeScale(1)
 		end )
 	end
