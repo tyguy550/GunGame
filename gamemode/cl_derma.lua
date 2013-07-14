@@ -38,7 +38,7 @@ F1MenuButton:SetText("How do I get this gamemode?")
 F1MenuButton:SetFont("f1helptext_font")
 F1MenuButton:SetVisible(true)
 F1MenuButton:SetDrawBackground(false)
-	
+
 local how_to_get_gungame_text = 
 [[To get this gamemode, you need to contact Tyguy]]
 
@@ -50,12 +50,15 @@ local how_to_get_gungame_text =
 		if !at_how_to_get_area then
 		at_how_to_get_area = true
 		F1MenuText:SetText(how_to_get_gungame_text)
-			F1LinkTyguyPage = vgui.Create("DLabel", F1Menu)
+			F1LinkTyguyPage = vgui.Create("DButton", F1Menu)
 			F1LinkTyguyPage:SetPos(12, 70)
 			F1LinkTyguyPage:SetText("You can go to my steam profile by clicking here")
 			F1LinkTyguyPage:SetTextColor(Color(255, 255, 255, 255))
 			F1LinkTyguyPage:SetFont("f1helptext_font")
 			F1LinkTyguyPage:SizeToContents()
+			F1LinkTyguyPage:SetSize(280, 20)
+			F1LinkTyguyPage:SetDrawBackground(false)
+			
 				
 				function F1LinkTyguyPage:DoClick()
 				gui.OpenURL("steamcommunity.com/profiles/76561198020390211/")
