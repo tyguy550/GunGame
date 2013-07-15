@@ -61,7 +61,7 @@ local how_to_get_gungame_text =
 			
 				
 				function F1LinkTyguyPage:DoClick()
-				gui.OpenURL("steamcommunity.com/profiles/76561198020390211/")
+				gui.OpenURL("http://steamcommunity.com/profiles/76561198020390211/")
 				end
 				
 				function F1LinkTyguyPage:Think()
