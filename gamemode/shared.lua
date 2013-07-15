@@ -1,4 +1,4 @@
-GM.Name = "Tyguy's GunGame"
+GM.Name = "Gun-Game"
 GM.Author = "Tyguy"
 DeriveGamemode("base")
 
