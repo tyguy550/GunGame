@@ -40,7 +40,7 @@ F1MenuButton:SetVisible(true)
 F1MenuButton:SetDrawBackground(false)
 
 local how_to_get_gungame_text = 
-[[To get this gamemode, you need to contact Tyguy]]
+[[You can get this gamemode at my GitHub]]
 
 
 	function F1MenuButton:DoClick()
@@ -52,7 +52,7 @@ local how_to_get_gungame_text =
 		F1MenuText:SetText(how_to_get_gungame_text)
 			F1LinkTyguyPage = vgui.Create("DButton", F1Menu)
 			F1LinkTyguyPage:SetPos(12, 70)
-			F1LinkTyguyPage:SetText("You can go to my steam profile by clicking here")
+			F1LinkTyguyPage:SetText("You can go to my github page by clicking here")
 			F1LinkTyguyPage:SetTextColor(Color(255, 255, 255, 255))
 			F1LinkTyguyPage:SetFont("f1helptext_font")
 			F1LinkTyguyPage:SizeToContents()
@@ -61,7 +61,7 @@ local how_to_get_gungame_text =
 			
 				
 				function F1LinkTyguyPage:DoClick()
-				gui.OpenURL("http://steamcommunity.com/profiles/76561198020390211/")
+				gui.OpenURL("http://github.com/tyguy550")
 				end
 				
 				function F1LinkTyguyPage:Think()
