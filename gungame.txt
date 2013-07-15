@@ -1,7 +1,7 @@
 "gungame"
 {
 	"base"		"base"
-	"title"		"Tyguy's GunGame"	
+	"title"		"Gun-Game"	
 	"maps"		"gm_*"
 	"menusystem"	"1"
 }
