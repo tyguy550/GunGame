@@ -22,6 +22,9 @@ ply.TextShowTime = 0
 	else
 	ply:SetNWInt("RoundStat", RoundDownTimer)
 	end
+	if GunGame.OpenMenuOnSpawn then
+	ply:ConCommand("gungame_help")
+	end
 end
 
 function GM:PlayerLoadout(ply)
