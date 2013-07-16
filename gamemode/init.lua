@@ -22,6 +22,19 @@ ply.TextShowTime = 0
 	else
 	ply:SetNWInt("RoundStat", RoundDownTimer)
 	end
+	if GunGame.FirstSpawnF1Menu then
+	ply:ConCommand("gungame_help")
+	end
+end
+
+function GM:CanPlayerSuicide(ply)
+	if GunGame.StopSuiciding then
+	return false
+	end
+	if GunGame.OpenMenuOnSpawn then
+	ply:ConCommand("gungame_help")
+	end
+>>>>>>> a2766b8dfeed5624c55dd8dc2b403d86fb06f70a
 end
 
 function GM:PlayerLoadout(ply)
