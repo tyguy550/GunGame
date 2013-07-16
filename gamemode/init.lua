@@ -34,7 +34,6 @@ function GM:CanPlayerSuicide(ply)
 	if GunGame.OpenMenuOnSpawn then
 	ply:ConCommand("gungame_help")
 	end
->>>>>>> a2766b8dfeed5624c55dd8dc2b403d86fb06f70a
 end
 
 function GM:PlayerLoadout(ply)
