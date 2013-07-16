@@ -59,6 +59,12 @@ hook.Add("ScalePlayerDamage", "sounds", function(ply, hit, dmg)
 	end
 end )
 
+hook.Add("CanPlayerSuicide", "stop_suiciders", function(ply)
+	if GunGame.StopSuiciding then
+	return false
+	end
+end
+
 hook.Add("EntityTakeDamage", "entity_took_damage_setting", function(ply, dmg)
 ply.MyWep = ply:GetActiveWeapon():GetClass()
 end )
