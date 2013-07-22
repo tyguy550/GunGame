@@ -36,6 +36,9 @@ function GM:CanPlayerSuicide(ply)
 	end
 end
 
+function GM:PlayerWonRound(ply)
+end
+
 function GM:PlayerLoadout(ply)
 ply:SetWalkSpeed(300)
 ply:SetRunSpeed(300)

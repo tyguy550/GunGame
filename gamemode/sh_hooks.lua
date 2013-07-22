@@ -73,6 +73,7 @@ ply.Died = true
 		attacker:Give(next_wep)
 		elseif attacker_weapon == GunGame.Guns[GunGame.LastGun] then
 		RoundOver(attacker)
+		hook.Call("PlayerWonRound", GM, attacker)
 		end
 		if GunGame.DeathGunBack then
 			if ply.MyWep ~= GunGame.Guns[1] then
